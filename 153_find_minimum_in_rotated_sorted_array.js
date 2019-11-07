@@ -11,11 +11,8 @@ var findMin = function (nums) {
   let min = 0;
   let max = nums.length - 1;
 
-  while (true) {
+  while (min < max - 1) {
     let midway = Math.floor((min + max) / 2);
-    if (min >= max - 1) {
-      return Math.min(nums[min], nums[max], ref);
-    }
 
     // if number midway through is bigger than ref
     if (nums[midway] > ref) {
@@ -29,8 +26,9 @@ var findMin = function (nums) {
     if (nums[midway - 1] > ref) return nums[midway];
 
     max = midway;
-
   }
+
+  return Math.min(nums[min], nums[max], ref);
 };
 
 
