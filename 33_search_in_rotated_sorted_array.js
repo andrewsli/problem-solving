@@ -11,25 +11,12 @@ var search = function (nums, target) {
   let upperBound = nums.length - 1;
   let midway;
 
-  // handle case where array isn't rotated
-  // just binary search for target
-  if (nums[lowerBound] < nums[upperBound]) {
-    while (lowerBound < upperBound) {
-      midway = Math.floor((lowerBound + upperBound) / 2);
-      if (nums[midway] === target) return midway;
-      if (nums[upperBound] === target) return upperBound;
-      if (midway === lowerBound) return -1;
-
-      if (target > nums[midway]) lowerBound = midway;
-      else upperBound = midway;
-    }
-  }
-
   // If array is rotated
   if (target > nums[upperBound] && target < nums[lowerBound]) return -1;
 
-  // set bounds for searching based on whether target is in first or second chunk
-  target > nums[upperBound] ? upperBound = findIndexMin(nums) - 1 : lowerBound = findIndexMin(nums);
+  // set bounds for searching based on whether arr is rotated and if it is,
+  // whether the target is in first or second chunk
+  if (nums[lowerBound]> nums[upperBound]) target > nums[upperBound] ? upperBound = findIndexMin(nums) - 1 : lowerBound = findIndexMin(nums);
 
   do {
     midway = Math.floor((lowerBound + upperBound) / 2);
