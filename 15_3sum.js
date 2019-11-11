@@ -11,25 +11,23 @@ var threeSum = function (nums) {
 
   nums.sort((a, b) => a - b);
 
-  let allIndexPairs = new Set();
-  for (let x = 0; x < nums.length - 1; x++) {
-    if (nums[x] === nums[x - 1]) continue;
-    for (let y = x + 1; y < nums.length; y++) {
-      allIndexPairs.add([x, y]);
-    }
-  }
+  for (let i = 0; i < nums.length - 2; i++) {
+    if (nums[i] > 0) break;
+    if (nums[i] === nums[i - 1]) continue;
+    let j = i + 1;
+    let k = nums.length - 1;
 
-  let seen = new Set()
-  for (let pair of allIndexPairs) {
-    for (let z = pair[1] + 1; z < nums.length; z++) {
-      if (pair.includes(z)) continue;
-      if (nums[pair[0]] + nums[pair[1]] + nums[z] === 0
-        &&
-        !seen.has(`${nums[pair[0]]}${nums[pair[1]]}${nums[z]}`)
-      ) {
-        results.push([nums[pair[0]], nums[pair[1]], nums[z]]);
-        seen.add(`${nums[pair[0]]}${nums[pair[1]]}${nums[z]}`);
+    while (j < k) {
+      let sum = nums[i] + nums[j] + nums[k];
+      if (sum === 0) {
+        results.push([nums[i], nums[j], nums[k]]);
+        while (nums[j] === nums[j + 1]) j++;
+        j++;
+        while (nums[k] === nums[k - 1]) k--;
+        k--;
       }
+      else if (sum < 0) j++;
+      else k--;
     }
   }
   return results;
