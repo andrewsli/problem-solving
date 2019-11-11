@@ -15,7 +15,7 @@ var search = function (nums, target) {
   if (target > nums[upperBound] && target < nums[lowerBound]) return -1;
 
   // set bounds for searching based on whether arr is rotated and if it is,
-  // whether the target is in first or second chunk
+  // whether the target is in first or second chunk using a helper function
   if (nums[lowerBound]> nums[upperBound]) target > nums[upperBound] ? upperBound = findIndexMin(nums) - 1 : lowerBound = findIndexMin(nums);
 
   do {
