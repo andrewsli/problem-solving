@@ -3,8 +3,6 @@
  * @return {number[][]}
  */
 
-// Solution passes 311/313 leetcode tests but fails due to exceeding time limit
-// Todo: Find more efficient solution
 var threeSum = function (nums) {
   let results = [];
   if (nums.length < 3) return results;
