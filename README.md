@@ -20,6 +20,8 @@
 
 153: [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
+198: [House Robber](https://leetcode.com/problems/house-robber/)
+
 200: [Num Islands](https://leetcode.com/problems/number-of-islands/)
 
 217: [Contains Duplicates](https://leetcode.com/problems/contains-duplicate/)
