@@ -10,11 +10,19 @@
 
 15: [3 Sum](https://leetcode.com/problems/3sum/)
 
+20: [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
 33: [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 53: [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 70: [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+100: [Same Tree](https://leetcode.com/problems/same-tree/)
+
+102: [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+104: [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 121: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
