@@ -4,6 +4,8 @@
 
 1: [Two Sum](https://leetcode.com/problems/two-sum)
 
+3: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
 11: [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 15: [3 Sum](https://leetcode.com/problems/3sum/)
@@ -15,6 +17,8 @@
 70: [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 121: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+128: [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
 152: [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 

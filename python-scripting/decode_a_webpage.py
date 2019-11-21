@@ -7,4 +7,4 @@ r_html = r.text
 soup = BeautifulSoup(r_html, features="html.parser")
 titles = soup.find_all("h2")
 for title in titles:
-    print(title.contents[0])
+    print(title.text)
